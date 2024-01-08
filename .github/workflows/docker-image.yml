@@ -19,7 +19,13 @@ jobs:
     - name: push docker image
       with:
          context: .
+         platforms: linux/amd64,linux/arm64
          push: true
+         tags: |
+            syed-mudassir871/app:latest
+            syed-mudassir871/app:1.0.0
+            ghcr.io/syed-mudassir871/app:latest
+            ghcr.io/syed-mudassir871/app:1.0.0
          
       
       
