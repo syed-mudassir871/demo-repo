@@ -17,7 +17,7 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
     - name: push docker image
-      run: docker push syed-mudassir871/app:1.0.0
+      run: docker push
     # - name: push docker image
     #   uses: docker/push-action@v5
     #   with:
