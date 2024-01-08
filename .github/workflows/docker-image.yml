@@ -15,9 +15,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build . --file Dockerfile --tag my-image-name:demo-image
     - name: push docker image
-      run: docker push
+      run: docker push ghcr.io/syed-mudassir871/demo-image:latest
     # - name: push docker image
     #   uses: docker/push-action@v5
     #   with:
